@@ -26,6 +26,7 @@
             android:id="@+id/btnSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:hapticFeedbackEnabled="true"
             android:text="Search" />
 
         <Space
@@ -37,6 +38,7 @@
             android:id="@+id/btnClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:hapticFeedbackEnabled="true"
             android:text="Clear" />
 
     </LinearLayout>
@@ -58,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
+            android:hapticFeedbackEnabled="true"
             android:text="Wrap Text" />
     </LinearLayout>
 

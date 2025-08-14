@@ -4,6 +4,8 @@ import android.content.DialogInterface
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.service.controls.actions.FloatAction
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.example.curltest4.databinding.ActivityMainBinding
@@ -21,8 +23,9 @@ class MainActivity : AppCompatActivity() {
         // Example of a call to a native method
         binding.progressBar.setProgress(0, false)
         binding.sampleText.typeface = Typeface.MONOSPACE
-        if(!binding.checkBox.isActivated)
-            binding.scrollView2.isHorizontalScrollBarEnabled = true;
+        binding.sampleText.setTextIsSelectable(true)
+        if(!binding.checkBox.isChecked)
+            binding.sampleText.setHorizontallyScrolling(true)
 
         binding.btnSearch.setOnClickListener {
             val url = binding.etURL.text.toString().trim()
